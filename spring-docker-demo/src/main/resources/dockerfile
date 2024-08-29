@@ -1,0 +1,4 @@
+FROM openjdk:17-oracle
+EXPOSE 8080
+COPY ./spring-docker-demo-1.0.0.jar spring-docker-demo-1.0.0.jar
+ENTRYPOINT ["java","-jar","/spring-docker-demo-1.0.0.jar"]
